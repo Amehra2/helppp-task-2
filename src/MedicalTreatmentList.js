@@ -2,11 +2,11 @@ import React from 'react';
 import MedicalTreatment from './MedicalTreatment';
 
 function MedicalTreatmentList(props){
-  const MedicalTreatmentListJ = props.json;
-  const MedicalTreatmentList = JSON.parse(MedicalTreatmentListJ);
-  const ListMedicalTreatmentList = MedicalTreatmentList.map((MedicalTreatment)=>
+  const medicalTreatmentListJ  = props.json;
+  const medicaltreatmentlist = JSON.parse(medicalTreatmentListJ);
+  const ListMedicalTreatmentList = medicaltreatmentlist.map((medicalTreatment)=>
   <li>
-    <MedicalTreatment treatId= {MedicalTreatment.treatId} treatCourseId= {MedicalTreatment.treatCourseId} type={MedicalTreatment.type} category={MedicalTreatment.category} name={MedicalTreatment.name} startDate={MedicalTreatment.startDate} />
+    <MedicalTreatment treatId={medicalTreatment.treatId} treatCourseId= {medicalTreatment.treatCourseId} type={medicalTreatment.type} category={medicalTreatment.category} name={medicalTreatment.name} startDate={medicalTreatment.startDate} />
   </li>);
   return(
     <ul>

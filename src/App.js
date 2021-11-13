@@ -3,21 +3,17 @@ import "./style.css";
 import MedicalTreatmentList from './MedicalTreatmentList';
 
 export default function App() {
-  const MedicalTreatmentListAsJson = 
 
-  '[{"treatId": "402", "treatCourseId":"02022", "type": "long term", "category": "dementia", "name": "Joseph stevens", "startDate": "01-01-2020"} ,' +
-
-    '[{"treatId": "403", "treatCourseId":"02023", "type": "short term", "category": "knee injury", "name": "James Waterstone", "startDate": "25-04-2020} ,' +
-
-    '[{"treatId": "404", "treatCourseId":"02024", "type": "long term", "category": "epilepsy", "name": "Sarah Mcsweeny", "startDate": "17-01-2021"} ,' +
-
-    '[{"treatId": "405", "treatCourseId":"02025", "type": "long term", "category": "heart patient", "name": "Steve Maxime", "startDate": "19-08-2019"} ,' +
-
-    '[{"treatId": "406", "treatCourseId":"02026", "type": "short term", "category": "hamstring injury", "name": "Amir Raheem", "startDate": "11-11-2019"}]';
+  const medicalTreatmentListAsJson =
+  '[ {"treatId": "LHM402", "treatCourseId":"40220", "type": "long term", "category": "Dementia", "name": "Josh Drakeson", "startDate": "28-03-2021"} ,' +
+    '{"treatId": "LHM403", "treatCourseId":"40330", "type": "long term", "category": "Lower Hernia", "name": "Daniel Westford", "startDate": "14-02-2019"} ,' +
+    '{"treatId": "LHM404", "treatCourseId":"40440", "type": "long term", "category": "Epilepsy", "name": "Peter Mcgorge", "startDate": "04-05-2017"} ,' +
+    '{"treatId": "LHM405", "treatCourseId":"40550", "type": "long term", "category": "Heart patient", "name": "Frank Alexander", "startDate": "24-07-2016"} ,' +
+    '{"treatId": "LHM406", "treatCourseId":"406440", "type": "short term", "category": "Hamstring injury", "name": "Omar Adnan", "startDate": "13-10-2021"}]';
 
 return (
     <div>
-        <MedicalTreatmentList json={MedicalTreatmentListAsJson} />
+        <MedicalTreatmentList json={medicalTreatmentListAsJson} />
     </div>
   );
 }
