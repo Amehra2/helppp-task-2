@@ -14,6 +14,12 @@ export default function App() {
 return (
     <div>
         <MedicalTreatmentList json={medicalTreatmentListAsJson} />
+        
     </div>
+
+//{MedicalTreatmentList.filter(person => person.category ==Epilepsy).map(filteredPerson => (
+  //<li>
+    //{filteredPerson.name}
+  //</li>
   );
 }
