@@ -7,7 +7,7 @@ function MedicalTreatmentList(props){
 
 /*
 
-Prior to the .map function i have applied .filter() which displays medicaltreatmentlist if the category is equal to Sciatica
+Before implementing the .map function. I decided to apply the .filter() which will display the medicaltreatmentlist if the category is equal to Sciatica
 
 */
   const ListMedicalTreatmentList = medicaltreatmentlist.filter(medicalTreatment => medicalTreatment.category === 'Sciatica').map((medicalTreatment)=>
